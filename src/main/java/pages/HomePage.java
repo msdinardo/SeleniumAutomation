@@ -26,6 +26,24 @@ public class HomePage {
         return new DropDownPage(webdriver);
     }
 
+    public HoverPage clickHoverLink()
+    {
+        clickLink("Hovers");
+        return new HoverPage(webdriver);
+    }
+
+    public KeyPressPage clickKeyPressPage()
+    {
+        clickLink("Key Presses");
+        return new KeyPressPage(webdriver);
+    }
+
+    public HSliderPage clickHorizontalSlider()
+    {
+        clickLink("Horizontal Slider");
+        return new HSliderPage(webdriver);
+    }
+
     private void clickLink(String linkText)
     {
         By genericLink = By.linkText(linkText);
