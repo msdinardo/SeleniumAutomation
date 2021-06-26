@@ -50,6 +50,12 @@ public class HomePage {
         return new AlertPage(webdriver);
     }
 
+    public FileUploadPage clickFileUpload()
+    {
+        clickLink("File Upload");
+        return new FileUploadPage(webdriver);
+    }
+
     private void clickLink(String linkText)
     {
         By genericLink = By.linkText(linkText);
