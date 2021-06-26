@@ -44,6 +44,12 @@ public class HomePage {
         return new HSliderPage(webdriver);
     }
 
+    public AlertPage clickAlertPage()
+    {
+        clickLink("JavaScript Alerts");
+        return new AlertPage(webdriver);
+    }
+
     private void clickLink(String linkText)
     {
         By genericLink = By.linkText(linkText);
