@@ -56,6 +56,12 @@ public class HomePage {
         return new FileUploadPage(webdriver);
     }
 
+    public DynamicLoadingPage clickDynamicLoading()
+    {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(webdriver);
+    }
+
     private void clickLink(String linkText)
     {
         By genericLink = By.linkText(linkText);
