@@ -1,6 +1,7 @@
 package taudemo.dynamicloading;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.DynamicLoadingPage;
 import pages.HomePage;
@@ -53,6 +54,12 @@ public class DynamicLoadingTest extends BaseTest {
         assertEquals(dynamicLoadingPage.visibleStart(),false);
         assertEquals(dynamicLoadingPage.visibleLoading(),false);
         assertEquals(dynamicLoadingPage.visibleFinish(),true);
+    }
+
+    @BeforeMethod
+    public void beforeMethod()
+    {
+        driver.get("https://the-internet.herokuapp.com");
     }
 
 

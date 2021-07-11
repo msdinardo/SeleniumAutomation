@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/msdin/Documents/proyects/SeleniumAutomation">
+        <classes>
+            <class name="taudemo.HorizontalSlider.HorizontalSlider">
+                <methods>
+                    <include name="testFive"/>
+                    <include name="testFour"/>
+                </methods>
+            </class>
+            <class name="taudemo.alert.AlertTest">
+                <methods>
+                    <include name="validateAlert"/>
+                    <include name="validateConfirm"/>
+                    <include name="cancelConfirm"/>
+                    <include name="typePrompt"/>
+                </methods>
+            </class>
+            <class name="taudemo.dropdown.DropDownTest">
+                <methods>
+                    <include name="testSelectDropDown"/>
+                </methods>
+            </class>
+            <class name="taudemo.dynamicloading.DynamicLoadingTest">
+                <methods>
+                    <include name="testDynamicLoagingHidden"/>
+                    <include name="testDynamicLoadingRender"/>
+                </methods>
+            </class>
+            <class name="taudemo.hover.HoverTest">
+                <methods>
+                    <include name="testHoverUse1"/>
+                </methods>
+            </class>
+            <class name="taudemo.keypress.KeyPressTest">
+                <methods>
+                    <include name="testEnter"/>
+                </methods>
+            </class>
+            <class name="taudemo.login.LoginTest">
+                <methods>
+                    <include name="testSucessfulLogin"/>
+                </methods>
+            </class>
+            <class name="taudemo.uploadfile.UploadFile">
+                <methods>
+                    <include name="uploadFile"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
