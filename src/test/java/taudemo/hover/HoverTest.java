@@ -13,7 +13,6 @@ public class HoverTest extends BaseTest {
     @Test
     public void testHoverUse1()
     {
-        HomePage homePage = new HomePage(driver);
         HoverPage hoverPage = homePage.clickHoverLink();
         HoverPage.FigureCaption caption = hoverPage.hoverOverFigure(1);
         assertTrue(caption.isCaptionDisplayed(),"The caption is not displayed");

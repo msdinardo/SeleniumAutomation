@@ -14,7 +14,6 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testSucessfulLogin() {
-        HomePage homePage = new HomePage(driver);
         LoginPage loginPage = homePage.clickFormAuthenticationLink();
         loginPage.typeUsername("tomsmith");
         loginPage.typePassword("SuperSecretPassword!");
