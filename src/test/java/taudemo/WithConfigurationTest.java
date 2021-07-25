@@ -15,7 +15,7 @@ public class WithConfigurationTest {
 
     @BeforeClass
     public void beforeAll() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Manuel\\IdeaProjects\\SeleniumAutomation\\src\\main\\resources\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Bin\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.amazon.com");
     }

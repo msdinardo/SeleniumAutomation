@@ -19,7 +19,6 @@ public class AlertTest extends BaseTest {
     @Test
     public void validateAlert()
     {
-        HomePage homePage = new HomePage(driver);
         AlertPage alertPage = homePage.clickAlertPage();
         alertPage.clickAlertButton();
         String alertText = alertPage.getAlertGetText();
@@ -33,7 +32,6 @@ public class AlertTest extends BaseTest {
     public void validateConfirm()
     {
         String expectedResult = "You clicked: Ok";
-        HomePage homePage = new HomePage(driver);
         AlertPage alertPage = homePage.clickAlertPage();
         alertPage.clickConfirmButton();
         String alertText = alertPage.getAlertGetText();
@@ -47,7 +45,6 @@ public class AlertTest extends BaseTest {
     public void cancelConfirm()
     {
         String expectedResult = "You clicked: Cancel";
-        HomePage homePage = new HomePage(driver);
         AlertPage alertPage = homePage.clickAlertPage();
         alertPage.clickConfirmButton();
         String alertText = alertPage.getAlertGetText();
@@ -61,7 +58,6 @@ public class AlertTest extends BaseTest {
     public void typePrompt()
     {
         String textToType = "This is a new test";
-        HomePage homePage = new HomePage(driver);
         AlertPage alertPage = homePage.clickAlertPage();
         alertPage.clickPromptButton();
         String alertText = alertPage.getAlertGetText();

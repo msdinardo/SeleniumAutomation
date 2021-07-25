@@ -16,7 +16,6 @@ public class DynamicLoadingTest extends BaseTest {
     @Test
     public void testDynamicLoagingHidden()
     {
-        HomePage homePage = new HomePage(driver);
         DynamicLoadingPage dynamicLoadingPage = homePage.clickDynamicLoading();
         dynamicLoadingPage.clickExample1();
         //Validate Start Visible
@@ -42,7 +41,6 @@ public class DynamicLoadingTest extends BaseTest {
     public void testDynamicLoadingRender()
     {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        HomePage homePage = new HomePage(driver);
         DynamicLoadingPage dynamicLoadingPage = homePage.clickDynamicLoading();
         dynamicLoadingPage.clickExample2();
         //Validate Start Visible
@@ -61,6 +59,4 @@ public class DynamicLoadingTest extends BaseTest {
     {
         driver.get("https://the-internet.herokuapp.com");
     }
-
-
 }

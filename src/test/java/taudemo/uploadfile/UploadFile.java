@@ -11,7 +11,6 @@ public class UploadFile extends BaseTest {
     @Test
     public void uploadFile()
     {
-        HomePage homePage = new HomePage(driver);
         var fileUploadPage = homePage.clickFileUpload();
         fileUploadPage.fillRegularUpload("C:\\Users\\msdin\\Downloads\\download.jpg");
         fileUploadPage.submitForm();
